@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Carnuts | Page 2</title>
+    <title>Contact Us | Carnuts</title>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
     <div id="content">
         <header>
             <a id="logo_link" href="index.html">
-                <img class="logo" src="images/logo.png" alt="car Logo">
+                <img class="logo" src="images/logo.png" alt="Car Logo">
             </a>
             <nav>
                 <a href="index.html">Home</a>
@@ -18,21 +18,27 @@
                 <a href="contactus.html">Contact Us</a>
             </nav>
         </header>
+
+        <section class="hero-banner">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you! Send us a message, and we'll get back to you soon.</p>
+        </section>
+
         <main class="form-main">
             <div id="feedback"></div>
             <form action="#" method="post">
                 <ul>
                     <li>
-                      <label for="name">Name:</label>
-                      <input type="text" id="name" name="user_name"/>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="user_name" required />
                     </li>
                     <li>
-                      <label for="mail">Email:</label>
-                      <input type="email" id="mail" name="user_email"/>
+                        <label for="mail">Email:</label>
+                        <input type="email" id="mail" name="user_email" required />
                     </li>
                     <li>
-                      <label for="msg">Message:</label>
-                      <textarea id="msg" name="user_message"></textarea>
+                        <label for="msg">Message:</label>
+                        <textarea id="msg" name="user_message" required></textarea>
                     </li>
                     <li class="button">
                         <button type="submit">Send your message</button>
@@ -40,23 +46,32 @@
                 </ul>
             </form>
         </main>
+
+        <section class="map-section">
+            <h2>Find Us Here</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.081445777908!2d-122.0842499!3d37.4219999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb24c453dfb91%3A0x1dfdf8d03d121a49!2sGoogleplex!5e0!3m2!1sen!2sus!4v1639433929141!5m2!1sen!2sus"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+
         <footer>
             <p>Dry Oar &copy; Adam Lai</p>
             <p><a href="site-plan.html">Site Plan</a></p>
             <p><a href="contactus.html">Contact Us</a></p>
             <div class="social">
-                <a href="https://facebook.com"  target="_blank">
-                    <img src="images/facebook.png" alt="fb icon">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="Facebook Icon">
                 </a>
-                <a href="https://twitter.com"  target="_blank">
-                    <img src="images/twitter.png" alt="twitter icon">
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="Twitter Icon">
                 </a>
-                <a href="https://instagram.com"  target="_blank">
-                    <img src="images/instagram.png" alt="instagram icon">
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="Instagram Icon">
                 </a>
             </div>
         </footer>
     </div>
+
     <script>
         // get the feedback div element so we can do something with it.
         const feedbackElement = document.getElementById('feedback');
