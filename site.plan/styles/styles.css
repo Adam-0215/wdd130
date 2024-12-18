@@ -134,14 +134,15 @@ nav a:hover {
 }
 
 /* Footer styling */
-footer{
-    color: #FFFFFF; /* White */
-    background-color: #000000; /* Black */
+footer {
+    color: #FFFFFF;
+    background-color: #000000;
     padding: 25px 50px;
     margin-top: 200px; 
     display: flex;
-    justify-content: space-around;
+    justify-content: center; /* Center content horizontally */
     align-items: center;
+    flex-direction: column; /* Stack items vertically */
 }
 
 /* Home title font and color */
@@ -388,4 +389,40 @@ button {
 .blog-post img:hover, .featured-reviews img:hover {
     transform: scale(1.05);
     filter: brightness(90%);
+}
+.hero {
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: column; /* Stack content vertically */
+    text-align: center; /* Center the inline text */
+    margin: 0 auto; /* Center the entire section if it has a container */
+    padding: 20px; /* Add spacing for better aesthetics */
+}
+
+.hero img {
+    display: block; /* Treat the image as a block-level element */
+    margin: 0 auto; /* Center the image horizontally */
+    max-width: 100%; /* Ensure the image resizes properly */
+    height: auto;
+}
+
+.hero-content {
+    text-align: center; /* Center all text content */
+    margin: 10px auto; /* Center within its container */
+}
+
+.cta-button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #D35400; /* Orange-Red */
+    color: #FFFFFF; /* White text */
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px; /* Space above the button */
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #A63E00; /* Darker shade for hover */
 }
